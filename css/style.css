@@ -133,8 +133,26 @@ img {
   margin-right: 10px;
 }
 
-footer {
+.faq-lista dd {
+  margin-bottom: 0.5rem;
+  margin-left: 50px;
+}
+
+.copy {
   background: #aeea0a;
-  padding: 2rem;
+  grid-column: 3 / 5;
+  margin-bottom: 2rem;
+  height: 11vh;
+  padding: 1rem;
+}
+
+.copy p {
+  text-align: center;
+}
+
+.copy a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
 }
 
