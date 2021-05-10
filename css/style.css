@@ -35,13 +35,27 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
+
+ul {
+  list-style: none;
+}
+
 .grid-section {
   grid-column: 2 / 4;
   width: 100%;
   box-sizing: border-box;
   padding: 10px;
   display: grid;
-  grid-template-columns: 100px 300px 1fr;
+  grid-template-columns: 90px 300px 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+  grid-column: 1 / 4;
 }
 
 img {
@@ -49,8 +63,74 @@ img {
   width: 100%;
 }
 
-ul {
-  list-style: none;
+.receitas h2 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #79b700;
+}
+
+.receitas h2::before {
+  content: "";
+  display: inline-block;
+  background: #aeea0a;
+  width: 40px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+.receitas p {
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.receitas-lista {
+  height: 370px;
+  overflow-y: scroll;
+  grid-column: 2;
+}
+
+.receitas-lista::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+.receitas-lista::-webkit-scrollbar-thumb {
+  background: #79b700;
+  border-left: 5px solid #ebf7c1;
+  border-right: 5px solid #ebf7c1;
+}
+
+.receitas-lista::-webkit-scrollbar-track {
+  background: #ebf7c1;
+}
+
+.receitas-descricao {
+  grid-column: 3;
+}
+
+.receitas-descricao section {
+  margin-bottom: 2.5rem;
+}
+
+.faq-lista {
+  grid-column: 2 / 4;
+}
+
+.faq-lista dt {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: #79b700;
+}
+
+.faq-lista dt::before {
+  content: "";
+  display: inline-block;
+  background: #aeea0a;
+  width: 40px;
+  height: 10px;
+  margin-right: 10px;
 }
 
 footer {
